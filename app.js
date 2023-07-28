@@ -3,11 +3,11 @@ const express = require('express');
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,"./views/index.html"))
+    res.sendFile(path.join(__dirname,"./views/home.html"))
 });
 
 app.use(express.static('Public'));
 
-app.listen(6000,()=>{
+app.listen(6500,()=>{
     console.log("serrvidor corriendo")
 });
