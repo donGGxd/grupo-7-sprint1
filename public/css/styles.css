@@ -1,118 +1,123 @@
-header{
+
+header {
+
     background-color: grey;
-    
-   
-}
-.main-menu{
-    text-decoration: none;
-    color: black;
-    
-}
-.main-menu li{
-    list-style: none;
-}
-
-.main-menu ul{
-
-.main-menu li {
-    list-style: none;
-    margin-right: 15px; 
-}
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-@media(max-width:470px){
-    .main-menu{
-        display: none;
-    }
-    .logo-buscador{
-        display: flex;
-        justify-content: space-between
-    }
-    
-    .burger-menu {
-        background-color: #03264c; 
-        color: #ffff; 
-        display: block;
-         max-width: 50px;
-          padding: 15px 0; 
-          border-radius: 8px; 
-          text-align: center; 
-          font-size: 18px; 
-          margin: auto;
-        }
-
-}
-
-@media(min-width:471px){
-  
-  
-    
-        header{
-            background-color: grey;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-           
-        }
-        .main-menu{
-            text-decoration: none;
-            color: black;
-            display: flex;
-            justify-content: space-between;
-        }
-        .main-menu li{
-            list-style: none;
-        }
-        
-        .main-menu ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-        .main-menu li {
-            list-style: none;
-            margin-right: 15px; 
-    }
-    .burger-menu{
-        display: none;
-    }
-}
-
-@media(min-width:720px){
-  
-    
-    header{
-        background-color: grey;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-       
-    }
-    .main-menu{
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: space-between;
-    }
-    .main-menu li{
-        list-style: none;
-    }
-    
-    .main-menu ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px; /* Agrega un poco de espacio entre los elementos internos */
+}
+.logo-buscador {
+    display: flex;
+    align-items: center;
+}
+.Logo img {
+    /* Estilos para la imagen del logo (ajustar según tus necesidades) */
+    width: 100px;
+    height: auto;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Agrega espacio entre el logotipo y el buscador */
+}
+.buscador input[type="text"] {
+    /* Estilos para el cuadro de búsqueda (ajustar según tus necesidades) */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buscador button {
+    /* Estilos para el botón de búsqueda (ajustar según tus necesidades) */
+    background-color: #03264c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px; /* Agrega espacio entre el cuadro de búsqueda y el botón */
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu li {
+    margin-right: 15px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el menú hamburguesa en pantallas pequeñas */
+.burger-menu {
+    display: none; /* Por defecto, estará oculto en pantallas grandes */
+}
+
+
+
+.Logo img {
+  
+    
+    border-radius: 50%; /* Dar forma redonda a la imagen */
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 470px) {
+    
+    .main-menu {
+        display: none; 
     }
-    .main-menu li {
+
+    .burger-menu {
+        display: block; /* Mostrar el menú hamburguesa */
+    }
+}
+
+@media (min-width: 471px) {
+    /* Estilos para pantallas medianas y grandes */
+    .main-menu {
+        display: flex; /* Mostrar la lista del menú principal */
+    }
+
+    .burger-menu {
+        display: none; /* Ocultar el menú hamburguesa en pantallas grandes */
+    }
+}
+
+@media (min-width: 720px) {
+    .main-menu{
+        display: flex;
+    }
+    .main-menu ul{
+        display: flex;
         list-style: none;
-        margin-right: 15px; 
-}
-.burger-menu{
-    display: none;
-}
+        margin-left: 2px;
+    }
+    .buscador{
+        width: 120px;
+    }
+ 
 }
