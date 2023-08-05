@@ -1,12 +1,17 @@
-section{
-    background-color: gray;
+ 
+body{
+    background-color: white;
 }
+
+
+
+
 header{
 background-color: green;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px; /* Agrega un poco de espacio entre los elementos internos */
+padding: 10px; 
 }
 .logo-buscador {
 display: flex;
@@ -124,6 +129,48 @@ border-radius: 50%; /* Dar forma redonda a la imagen */
 
 
 
+footer {
+    text-align: center;
+    background-color: white;
+    color:#666;
+    
+  }
+  footer .copy{
+    display: flex;
+  }
+
+.section{
+    display: flex;
+}
+.articulo img{
+    width: 100%;
+}
+.articulo{
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,6 +188,7 @@ border-radius: 50%; /* Dar forma redonda a la imagen */
     max-width: 20px; /* Limitar el ancho máximo de la imagen del logo */
     margin-right: 10px; /* Agregar un poco de espacio entre el logotipo y el buscador */
 }
+
 
 }
 
