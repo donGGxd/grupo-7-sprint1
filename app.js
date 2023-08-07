@@ -11,9 +11,17 @@ app.get('/formulario',(req,res)=>{
 app.get('/a',(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/a.html"))
 });
-app.get('/producto',(req,res)=>{
+app.get('/producto1',(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/producto1.html"))
 });
+app.get('/carrito',(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/carrito.html"))
+});
+
+
+
+
+
 
 app.use(express.static('Public'));
 

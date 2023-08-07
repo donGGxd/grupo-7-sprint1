@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/producto.css">
+  <title>Carrito de Compras</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Carrito de Compras</h1>
+    <div class="productos-en-carrito">
+      <h2>Productos en el Carrito:</h2>
+      <ul id="lista-productos"></ul>
+    </div>
+  </div>
+  
+  <script>
+    function obtenerCookies() {
+      const cookies = document.cookie.split('; ');
+      const productos = [];
+
+      for (const cookie of cookies) {
+        const [nombre, valor] = cookie.split('=');
+        if (nombre.includes('producto_')) {
+          productos.push(decodeURIComponent(valor));
+        }
+      }
+
+      return productos;
+    }
+
+    function mostrarProductosEnCarrito() {
+      const listaProductos = document.getElementById('lista-productos');
+      const productos = obtenerCookies();
+
+      listaProductos.innerHTML = '';
+      for (const producto of productos) {
+        const li = document.createElement('li');
+        li.textContent = producto;
+        listaProductos.appendChild(li);
+      }
+    }
+
+    window.onload = function () {
+      mostrarProductosEnCarrito();
+    };
+  </script>
+</body>
+</html>
