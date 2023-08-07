@@ -11,6 +11,9 @@ app.get('/formulario',(req,res)=>{
 app.get('/a',(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/a.html"))
 });
+app.get('/producto',(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/producto1.html"))
+});
 
 app.use(express.static('Public'));
 
