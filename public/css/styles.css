@@ -310,6 +310,32 @@ h3 {
 
 
 
+  .articulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Si deseas agregar un margen alrededor de las imágenes */
+.articulo img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
