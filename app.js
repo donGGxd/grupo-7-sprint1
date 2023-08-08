@@ -20,6 +20,9 @@ app.get('/carrito',(req,res)=>{
 app.post('/usuario',(req,res)=>{
     res.sendFile(path.join(__dirname,"./views/usuario.html"))
 });
+app.get('/hamburguesa',(req,res)=>{
+    res.sendFile(path.join(__dirname,"./views/hamburguesa.html"))
+});
 
 
 
