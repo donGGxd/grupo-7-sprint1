@@ -1,0 +1,89 @@
+body{
+    background-image: url('/img/istockphoto-1294603953-612x612.jpg');
+    background-size: cover; 
+    background-position: center; 
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.formulario-contenedor {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+
+.formulario-contenedor h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.formulario-contenedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contenedor form label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.formulario-contenedor form input {
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario-contenedor form input:focus {
+    border-left: 5px solid #333;
+}
+
+
+.formulario-contenedor form button {
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2e24c5;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario-contenedor form button:hover {
+    transform: scale(1.1);
+}
+
+
+.formulario-contenedor footer {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contenedor footer button {
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #1b54e6;
+}

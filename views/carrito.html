@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Carrito de Compras</h1>
+    <h1>Mis Compras</h1>
     <div class="productos-en-carrito">
       <h2>Productos en el Carrito:</h2>
       <ul id="lista-productos"></ul>
@@ -22,7 +22,7 @@
 
       for (const cookie of cookies) {
         const [nombre, valor] = cookie.split('=');
-        if (nombre.includes('producto_')) {
+        if (nombre.includes('producto=')) {
           productos.push(decodeURIComponent(valor));
         }
       }

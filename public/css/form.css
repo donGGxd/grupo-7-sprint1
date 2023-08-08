@@ -7,6 +7,11 @@ body {
     align-items: center;
     min-height: 100vh;
   }
+  body {
+    background-image: url('/img/istockphoto-1294603953-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+  }
   .container {
     background-color: #fff;
     border-radius: 10px;
@@ -18,19 +23,19 @@ body {
   h1 {
     text-align: center;
   }
-  .registration-form label {
+  form label {
     display: block;
     margin-top: 10px;
   }
-  .registration-form input,
-  .registration-form select {
+  form input,
+  form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 5px;
   }
-  .registration-form button {
+  form button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -41,24 +46,26 @@ body {
     cursor: pointer;
     margin-top: 15px;
   }
-  .registration-form button:hover {
+  form button:hover {
     background-color: #2980b9;
   }
-  
+  form input[type="radio"] {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
   .volver-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin-top: 15px;
     text-decoration: none;
   }
   
   .volver-button button {
-    display: inline-block;
     background-color: #e74c3c;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-right: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -66,4 +73,3 @@ body {
   .volver-button button:hover {
     background-color: #c0392b;
   }
-  

@@ -9,7 +9,8 @@
 <body>
   <div class="container">
     <h1>Registro de Zapatillas</h1>
-    <form class="registration-form">
+    
+    <form action="/usuario" method="POST">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
 
@@ -22,18 +23,21 @@
       <label for="contrasena">Contraseña:</label>
       <input type="password" id="contrasena" name="contrasena" required>
 
-      <label for="preferencia">Tipo de zapatilla favorita:</label>
+      <label for="preferencia">Que tipo de zapatillas te gustan?:</label>
       <select id="preferencia" name="preferencia">
         <option value="deportivas">Deportivas</option>
         <option value="casuales">Casuales</option>
         <option value="extravagantes">Extravagantes</option>
+
+      </select>
+        <label for="p">Que quiere hacer?:</label>
+        <select id="pr" name="pr">
+          <option value="vendedor">Vender</option>
+          <option value="comprador">Comprar</option>
+  
       </select>
 
-      <label for="compra-vende">¿Quiere comprar o vender?</label>
-      <input type="radio" id="compra" name="compra-vende" value="comprar">
-      <label for="compra">Comprar</label>
-      <input type="radio" id="vende" name="compra-vende" value="vender">
-      <label for="vende">Vender</label>
+   
 
       <button type="submit">Registrarse</button>
       
