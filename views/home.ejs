@@ -1,41 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <title>Sprint-E-commerce</title>
-</head>
+<html>
+
+
+<%- include('./partials/head')%>
 <body>
-    <header>
-        <div class="logo-buscador">
-            <div class="Logo">
-                <img src="/img/concepto-logotipo-alta-calidad-presenta-zapatilla-hecha-segmentos-vibrantes-aspecto-fresco-moderno-dibujado-mano-vintage_668007-95.avif" alt="Logo">
-            </div>
-            <div class="buscador">
-                <input type="text" placeholder="Buscar productos, marcas">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-        <nav class="main-menu">
-            <ul>
-                <li class="ocultar"><a href="#">Ofertas</a></li>
-                <li><a href="/vender"><div>Vender</div></a></li>  
-                <li class="ocultar"><a href="/hamburguesa">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/a"><div>Ingresa</div><i class="fas fa-angle-right"></i></a></li>
-                <li><a href="/formulario">Crea tu cuenta <div><i class="fas fa-user"></i></div></a></li>
-                <li><a href="/carrito"><div>Mis compras</div><div><i class="fas fa-shopping-cart"></i></div></a></li>    
-                
-            </ul>
-        </nav>
-       <a href="/hamburguesa"><div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div></a> 
-    </header>
+<%- include('./partials/header')%>
 
     <section class="container">
         <div class="slider-wrapper">
@@ -189,28 +158,7 @@
             </div>
             </div>
 
-            <footer class="footer">
-                <div class="contenedor">
-                  <div class="footer-contenido">
-                    <div class="logo-footer">
-                      <img src="/img/concepto-logotipo-alta-calidad-presenta-zapatilla-hecha-segmentos-vibrantes-aspecto-fresco-moderno-dibujado-mano-vintage_668007-95.avif" alt="Logo de la tienda">
-                    </div>
-                    <div class="contacto-info">
-                      <h3 class="c">Contacto</h3>
-                      <p>Email: info@zapatillas.com</p>
-                      <p>Teléfono: +123456789</p>
-                    </div>
-                    <div class="social">
-                      <h3 class="c">Síguenos en redes</h3>
-                      <ul>
-                        <li><a href="#"><img src="/img/Facebook_f_logo_(2019).svg.webp" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="/img/Instagram_logo_2016.svg.webp" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="/img/Logo_of_Twitter.svg.png" alt="Twitter"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </footer>
+  <%- include('./partials/footer') %>
               
 </body>
 </html>
