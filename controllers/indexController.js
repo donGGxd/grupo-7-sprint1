@@ -17,6 +17,9 @@ const controlador = {
     },
     usuario:(req, res) => {
         res.render('usuario');
+    },
+    vender:(req,res)=>{
+        res.render('vender')
     }
 };
 

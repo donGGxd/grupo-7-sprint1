@@ -41,7 +41,8 @@ app.use(routesCarrito)
 const routesUsuario=require('./routes/usuario');
 app.use(routesUsuario)
 
-
+const routesVenta=require('./routes/vender');
+app.use(routesVenta)
 
 
 
