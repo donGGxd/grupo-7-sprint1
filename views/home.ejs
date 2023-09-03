@@ -26,136 +26,52 @@
     <div class="Productos">
 
         <section class="articulos-container">
+            <% for (let i = 0; i < products.length; i++) { %>
             <div class="articulo">
-                <a href="/producto1">
+                <a href="">
                 <figure>
-                    <img src="/img/zapatilla-de-miles.jpg" alt="Imagen de Zapatill">
+                    <img src="/img/<%= products[i].image%>" alt="Imagen de Zapatill">
                 </figure>
                 </a>
                 <div class="elementos-articulo">
                     <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
                     <div class="precio-descuento">
-                    <div class="precio">$230.000</div>
-                    <div class="descuento">20% OFF</div>
+                    <div class="precio">$<%= products[i].price%></div>
+                    <div class="descuento"><%= products[i].discount%>% OFF</div>
+                    
                     </div>
-                    <h3>Zapatilla</h3>
+                    <p><%= products[i].name%></p>
                 </div>
                 
             </div>
-            <div class="articulo">
-                <a href="/producto2">
-                <figure>
-                    <img src="/img/coca-cola-bape-9.jpg" alt="Imagen de Zapatill">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$230.000</div>
-                    <div class="descuento">20% OFF</div>
-                    </div>
-                    <h3>Zapatilla-2</h3>
-                </div>
-            </div>
-        
-            <div class="articulo">
-                <a href="/producto4">
-                <figure>
-                    <img src="/img/images-cuero.jpg" alt="Imagen de Zpatilla-de-cuero">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$70.500</div>
-                    <div class="descuento">10% OFF</div>
-                    </div>
-                    <h3>Zapatilla-3</h3>
-                </div>
-            </div>
-        
-            <div class="articulo">
-                <a href="/producto3">
-                <figure>
-                    <img src="/img/descarga.jpg" alt="Imagen de zapa">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$23.200</div>
-                    <div class="descuento">5% OFF</div>
-                    </div>
-                    <h3>Zapatilla-4</h3>
-                </div>
-            </div>
-            </div>
+        <%}%>
     <h1 class="O">PRODUCTOS</h1>
     <div class="Productos">
 
+
+        productsDescuento
+
+        <% for (let i = 0; i < products.length; i++) { %>
+
         <section class="articulos-container">
             <div class="articulo">
-                <a href="/producto3">
+                <a href="">
                 <figure>
-                    <img src="/img/descarga.jpg" alt="Imagen de Zapatill">
+                    <img src="/img/<%= productsDescuento[i].image%>" alt="Imagen de Zapatilla">
                 </figure>
                 </a>
                 <div class="elementos-articulo">
                     <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
                     <div class="precio-descuento">
-                    <div class="precio">$230.000</div>
-                    <div class="descuento">20% OFF</div>
+                    <div class="precio">$<%= productsDescuento[i].price%></div>
+                    <div class="descuento"><%= productsDescuento[i].discount%>% OFF</div>
                     </div>
-                    <h3>Zapatilla-5</h3>
+                    <p><%= productsDescuento[i].name%></p>
                 </div>
             </div>
-            <div class="articulo">
-                <a href="/producto1">
-                <figure>
-                    <img src="/img/zapatilla-de-miles.jpg" alt="Imagen de Zapatill">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$230.000</div>
-                    <div class="descuento">20% OFF</div>
-                    </div>
-                    <h3>Zapatilla-6</h3>
-                </div>
-            </div>
-        
-            <div class="articulo">
-                <a href="/producto5">
-                <figure>
-                    <img src="/img/zapatillas-correr-sobre-fondo-blanco_10541-635.avif" alt="Imagen de Zpatilla-de-cuero">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$70.500</div>
-                    <div class="descuento">10% OFF</div>
-                    </div>
-                    <h3>Zapatilla-7</h3>
-                </div>
-            </div>
-        
-            <div class="articulo">
-                <a href="/producto6">
-                <figure>
-                    <img src="/img/zapatillas-de-hombre-bridger.jpg" alt="Imagen de zapa">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$23.200</div>
-                    <div class="descuento">5% OFF</div>
-                    </div>
-                    <h3>Zapatilla-8</h3>
-                </div>
-            </div>
+
+        </section>
+        <%}%>
             </div>
 
   <%- include('./partials/footer') %>
