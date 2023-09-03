@@ -24,9 +24,10 @@
 
     <h1 class="O">OFERTAS</h1>
     <div class="Productos">
-
+        
         <section class="articulos-container">
             <% for (let i = 0; i < products.length; i++) { %>
+            
             <div class="articulo">
                 <a href="">
                 <figure>
@@ -45,15 +46,14 @@
                 
             </div>
         <%}%>
+        </section>
+    </div>
+
     <h1 class="O">PRODUCTOS</h1>
     <div class="Productos">
 
-
-        productsDescuento
-
-        <% for (let i = 0; i < products.length; i++) { %>
-
         <section class="articulos-container">
+            <% for (let i = 0; i < products.length; i++) { %>
             <div class="articulo">
                 <a href="">
                 <figure>
@@ -69,10 +69,10 @@
                     <p><%= productsDescuento[i].name%></p>
                 </div>
             </div>
-
+            <%}%>
         </section>
-        <%}%>
-            </div>
+        
+     </div>
 
   <%- include('./partials/footer') %>
               

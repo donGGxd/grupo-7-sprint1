@@ -8,7 +8,7 @@ body{
   
 }
 header {
-  background-color: #2ecc71;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,12 +30,10 @@ header {
   margin-left: 20px; /* Agrega espacio entre el logotipo y el buscador */
 }
 .buscador input[type="text"] {
-  /* Estilos para el cuadro de búsqueda (ajustar según tus necesidades) */
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 .buscador button {
   
   background-color: #03264c;
@@ -45,25 +43,29 @@ header {
   border-radius: 5px;
   margin-left: 5px; /* Agrega espacio entre el cuadro de búsqueda y el botón */
 }
-
 .main-menu {
   list-style: none;
   display: flex;
   align-items: center;
 }
-
 .main-menu li {
   margin-right: 15px;
 }
-
 .main-menu a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+buscador.lupa{
+  color: green;
 }
 
-/* Estilos para el menú hamburguesa en pantallas pequeñas */
+
+.contacto-info p{
+  color: white;
+}
+
 .burger-menu {
-  display: none; /* Por defecto, estará oculto en pantallas grandes */
+  display: none; 
 }
 
 .slider-wrapper {
@@ -226,6 +228,11 @@ footer .copy {
   border-radius: 20px;
 }
 
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #444;
+}
 h3 {
   margin-top: 10px;
   font-size: 18px;
@@ -251,20 +258,16 @@ color: white;
 padding: 5px 10px; 
 border-radius: 5px; 
 }
-
-
 .footer {
   background-color: #2c3e50; /* Fondo oscuro para el footer */
   color: white;
   padding: 40px 0;
 }
-
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .footer-contenido {
   display: flex;
   justify-content: space-between;
@@ -281,7 +284,7 @@ border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.contacto-info p,
+.contacto-info h3,
 .social ul {
   margin: 0;
 }
@@ -305,44 +308,16 @@ border-radius: 5px;
   color: white;
 }
 
-
-
-
-
-
 .articulo img {
   max-width: 100%;
   height: auto;
 }
 
-/* Si deseas agregar un margen alrededor de las imágenes */
 .articulo img {
   max-width: 100%;
   height: auto;
   margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -354,7 +329,7 @@ border-radius: 5px;
   }
 
   .burger-menu {
-      display: block; /* Mostrar el menú hamburguesa */
+      display: block; 
   }
 
   .Logo img {
@@ -407,24 +382,6 @@ border-radius: 5px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .footer {
       background-color: #2c3e50;
       color: white;
@@ -449,17 +406,14 @@ border-radius: 5px;
       border-radius: 50%;
       margin-bottom: 20px;
     }
-    
     .contacto-info h3,
     .social h3 {
       margin-bottom: 10px;
     }
-    
-    .contacto-info p,
+    .contacto-info h3,
     .social ul {
       margin: 0;
     }
-    
     .social ul {
       list-style: none;
       display: flex;
@@ -467,28 +421,14 @@ border-radius: 5px;
       gap: 10px;
       margin-top: 15px;
     }
-    
     .social img {
       width: 30px;
       height: 30px;
       transition: transform 0.2s;
     }
-    
     .social img:hover {
       transform: scale(1.2);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -498,21 +438,6 @@ border-radius: 5px;
 .ocultar{
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .main-menu {
       display: flex; 
@@ -600,7 +525,7 @@ border-radius: 5px;
   padding: 2px 5px;
   border-radius: 5px;
 } 
-.Productos .articulo .elementos-articulo h3 {
+.Productos .articulo .elementos-articulo p {
   font-size: 18px;
   margin: 0;
 }
