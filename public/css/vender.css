@@ -12,6 +12,10 @@ body {
     color: white; 
   }
   
+
+
+
+
   form {
     max-width: 400px;
     margin: 0 auto;
@@ -33,6 +37,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+
   }
   
   button:hover {
