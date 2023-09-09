@@ -55,9 +55,7 @@ header {
   text-decoration: none;
   color: white;
 }
-buscador.lupa{
-  color: green;
-}
+
 
 
 .contacto-info p{
@@ -323,13 +321,14 @@ border-radius: 5px;
 
 
 
-@media (max-width: 614px) {
+@media (max-width: 620px) {
   .main-menu {
       display: none;
   }
 
   .burger-menu {
       display: block; 
+      color: white;
   }
 
   .Logo img {
@@ -432,7 +431,7 @@ border-radius: 5px;
 
 }
 
-@media (min-width: 615px) and (max-width: 886px) {
+@media (min-width: 620px) and (max-width: 886px) {
 
 
 .ocultar{
