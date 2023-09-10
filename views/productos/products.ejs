@@ -15,8 +15,8 @@
         <section class="articulos-container">
             <% for (let i = 0; i < products.length; i++) { %>
             
-            <div class="articulo">
-                <a href="/producto/:id[i]">
+            <div class="articulo">   
+                <a href="/products/detail/<%= products[i].id %>">
                 <figure>
                     <img src="/img/<%= products[i].image%>" alt="Imagen de Zapatill">
                 </figure>

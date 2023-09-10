@@ -9,11 +9,11 @@
 <body>
   <div class="container">
     <div class="producto">
-      <img src="/img/images-cuero.jpg" alt="Zapatilla Nike Air" class="producto-imagen">
+      <img src="/img/<%= products.image %>" alt="Zapatilla Nike Air" class="producto-imagen">
       <div class="producto-info">
-        <h1>Zapatilla Nike Air</h1>
-        <p>Un diseño moderno y cómodo, perfecto para tu estilo.</p>
-        <p class="precio">$129.99</p>
+        <h1><%= products.name%></h1>
+        <p><%= products.description%></p>
+        <p class="precio">$<%= products.price%></p>
         <a href="/carrito?producto=Zapatilla%20Nike%20Air&precio=129.99" class="comprar-button">Comprar</a>
         <a href="/" class="volver-button">Volver</a>
       </div>
