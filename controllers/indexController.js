@@ -13,11 +13,11 @@ const controlador = {
     inicio: (req, res) => {
         res.render('home', { products: products ,productsDescuento:productsDescuento});
     },
-    formularioA: (req, res) => {
-        res.render('a');
+    login: (req, res) => {
+        res.render('login');
     },
-    formularioB: (req, res) => {
-        res.render('formulario');
+    registro: (req, res) => {
+        res.render('registro');
     },
     menu: (req, res) => {
         res.render('hamburguesa');
@@ -28,9 +28,7 @@ const controlador = {
     usuario: (req, res) => {
         res.render('usuario');
     },
-    vender: (req, res) => {
-        res.render('vender');
-    }
+   
 };
 
 module.exports = controlador;

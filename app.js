@@ -3,63 +3,52 @@ const express = require('express');
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, './public'))); 
+app.use(express.static(path.join(__dirname, '../public'))); 
 
 
-app.set('view engine','ejs');
+app.set('view engine','ejs'); 
 
 
 
 //rutas acomodadas
-const routes = require('./routes/inicio');
-app.use(routes);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+const routes = require('./routes/main');
+app.use("/",routes);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
- const routesA = require('./routes/formularioA');
- app.use(routesA);
-
-const routesB=require('./routes/formularioB');
-app.use(routesB);
-
-const routesmenu = require('./routes/menu');
-app.use(routesmenu);
 const routesCarrito=require('./routes/carrito');
 app.use(routesCarrito)
 
 const routesUsuario=require('./routes/usuario');
 app.use(routesUsuario)
 
-const routesVenta=require('./routes/vender');
-app.use(routesVenta)
-
 const productsRouter=require('./routes/products')
-app.use(productsRouter)
+app.use("/products",productsRouter)
 
 
 
 
 //rutas de productos 
 
-app.use("/productos",routes)
+
 
 app.get('/producto1', (req, res) => {
-    res.render('producto1');
+    res.render('productos/producto1');
 });
-app.get('/producto2', (req, res) => {
+app.get('productos/producto2', (req, res) => {
     res.render('producto2');
 });
-app.get('/producto3', (req, res) => {
+app.get('productos/producto3', (req, res) => {
     res.render('producto3');
 });
-app.get('/producto4', (req, res) => {
+app.get('productos/producto4', (req, res) => {
     res.render('producto4');
 });
-app.get('/producto5', (req, res) => {
+app.get('productos/producto5', (req, res) => {
     res.render('producto5');
 });
-app.get('/producto6', (req, res) => {
+app.get('productos/producto6', (req, res) => {
     res.render('producto6');
 });
-app.get('/producto7', (req, res) => {
+app.get('productos/producto7', (req, res) => {
     res.render('producto7');
 });
 
