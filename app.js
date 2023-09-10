@@ -12,8 +12,7 @@ app.set('view engine','ejs');
 
 //rutas acomodadas
 const routes = require('./routes/inicio');
-app.use(routes);
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+app.use(routes);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
  const routesA = require('./routes/formularioA');
  app.use(routesA);
@@ -32,6 +31,8 @@ app.use(routesUsuario)
 const routesVenta=require('./routes/vender');
 app.use(routesVenta)
 
+const productsRouter=require('./routes/products')
+app.use(productsRouter)
 
 
 
