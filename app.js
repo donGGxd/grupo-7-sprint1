@@ -38,6 +38,8 @@ app.use(routesVenta)
 
 //rutas de productos 
 
+app.use("/productos",routes)
+
 app.get('/producto1', (req, res) => {
     res.render('producto1');
 });
