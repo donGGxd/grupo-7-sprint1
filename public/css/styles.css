@@ -112,6 +112,7 @@ footer {
   text-align: center;
   background-color: white;
   color: #666;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 footer .copy {
@@ -185,6 +186,7 @@ footer .copy {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 280px;
+  
 }
 
 .articulo img {
@@ -209,6 +211,7 @@ footer .copy {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .precio {
@@ -228,11 +231,12 @@ p {
   margin-top: 10px;
   font-size: 18px;
   color: #444;
+  font-family: 'Bebas Neue', sans-serif;
 }
 h3 {
   margin-top: 10px;
   font-size: 18px;
-  color: #444;
+  color:white
 }
 
 /*.O{
@@ -503,7 +507,11 @@ h3 {
   display: flex;
   border: 1px solid #ccc; 
   border-radius: 5px; 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 450ms; 
+}
+.articulo:hover{
+  background-color:rgb(97, 186, 238)
 } 
 .Productos .articulo img {
   width: 100%;
@@ -546,4 +554,5 @@ h3 {
   display: flex;
   list-style: none;
 }
+
 }
