@@ -9,9 +9,6 @@ const controlador = {
 
         res.render('productos/products', { products: products});
     },
-    vender: (req, res) => {
-        res.render('productos/vender');
-    },
 
     // detalle del producto
     detail:function(req,res){
@@ -26,10 +23,43 @@ const controlador = {
         }
     }
         res.render("productos/detail",{products:productoEncontrado})
+    },
+    //creacion del producto
+    crear:(req, res) => {
+        res.render('productos/vender');
+    },
+    store: (req, res) => {
+        //console.log(req.body);
+       
+    let idProductoNuevo = 0;
+    let productoNuevo = {}; 
+
+    for (let i = 0; i < products.length; i++) {
+        if (idProductoNuevo < products[i].id) {
+            idProductoNuevo++;
+        }
     }
-      
-    
-}
+
+    idProductoNuevo = idProductoNuevo + 1;
+
+    productoNuevo = {
+        id: idProductoNuevo,
+        name: req.body.name,
+        description: req.body.description,
+        category: req.body.category,
+        image: req.body.image,
+        discount: req.body.discount,
+        price: req.body.price,
+    };
+
+    products.push(productoNuevo);
+    fs.writeFileSync(productsFilePath,JSON.stringify(products,null,""))
+        res.render('productos/products',{ products: products})
+        }
+        
+    }
+   
+
 
 
 
