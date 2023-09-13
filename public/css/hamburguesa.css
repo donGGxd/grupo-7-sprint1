@@ -1,16 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('/img/istockphoto-1294603953-612x612.jpg');
+  background-size: cover; 
+  background-position: center;
   }
   
   header {
-    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 20px 0;
   }
-  
+
   nav ul {
     list-style: none;
     margin: 0;
@@ -30,10 +32,14 @@ body {
   
   .section {
     padding: 40px;
+    color: white;
   }
   
   h2 {
-    color: #3498db;
+    color: white;
+    border-radius: 15px;
+    border: none 1px white;
+    background-color: #e74c3c;
   }
   
   footer {
@@ -57,3 +63,61 @@ body {
     background-color: #c0392b;
   }
   
+  /* media queries mobile */
+
+  @media (max-width: 620px){
+    h2{
+      text-align: center;
+    }
+    a{
+      margin-left: 40vw;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+
+
+  /* media queries tablet */
+
+
+  @media (min-width: 621px) and (max-width: 886px){
+    h1{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+      width: 50vw;
+      margin-left: 22%;
+    }
+    p{
+      text-align: center;
+    }
+    a{
+      margin-left: 45vw;
+    }
+  }
+
+   /* media queries desktop */
+
+
+  @media (min-width: 887px){
+    h1{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+      height: 35px;
+      width: 35vw;
+      margin-left: 31%;
+    }
+    p{
+      text-align: center;
+      font-size: 25px;
+    }
+    a{
+      margin-left: 46.6vw;
+      font-size: larger;
+    }
+  }
