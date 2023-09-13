@@ -2,6 +2,7 @@ body{
     background-image: url('/img/istockphoto-1294603953-612x612.jpg');
     background-size: cover; 
     background-position: center; 
+    font-family: 'Bebas Neue', sans-serif;
     
 }
 * {
@@ -19,14 +20,17 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 
 .formulario-contenedor h2 {
     text-align: center;
-    font-family: Arial, sans-serif;
     font-size: 24px;
-    color: #333;
+    color: white;
+    background-color: #2e24c5;
+    border-radius: 25px;
+    height: 35px;
 }
 
 
@@ -36,18 +40,18 @@ body{
 }
 
 .formulario-contenedor form label {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
     margin-bottom: 5px;
 }
 
 .formulario-contenedor form input {
-    height: 30px;
-    border: none;
+    height: 40px;
+    border: solid 1px rgb(201, 201, 201);
     outline: none;
     padding-left: 10px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .formulario-contenedor form input:focus {
@@ -60,16 +64,20 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: #fff;
-    background-color: #2e24c5;
-    transition: all 0.3s ease-in-out;
+    color: black;
+    background-color: white;
+    transition: all 450ms;
+    border-radius: 5px; 
+    border: solid 1px rgb(196, 193, 193);
+
 }
 
 .formulario-contenedor form button:hover {
-    transform: scale(1.1);
+    border-radius: 15px;
+    background-color: #2e24c5;
+    color: white;
 }
 
 
@@ -83,7 +91,76 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: Arial, sans-serif;
     font-size: 14px;
     color: #1b54e6;
+}
+
+
+/* media queries mobile */
+
+@media (max-width: 620px){
+    .formulario-contenedor{
+        width: 88vw;
+        height: 80vh;
+    }
+    h2{
+        margin-bottom: 30px;
+        width: 65vw;
+        margin-left: 6vw;
+        height: 25px;
+    }
+    input{
+        margin-top: 5%;
+    }
+    button{
+        margin-top: 25%;
+        margin-bottom: 5%;
+    }
+    a{
+        margin-top: 5%;
+    }
+}
+
+
+/* media queries tablet */
+
+@media (min-width: 620px) and (max-width: 886px){
+    .formulario-contenedor{
+        width: 75vw;
+        height: 50vh;
+    }
+    h2{
+        margin-bottom: 40px;
+        width: 75%;
+        margin-left: 14%;
+        height: 30px;
+    }
+    input{
+        margin-top: 3%;
+    }
+    button{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    
+}
+
+
+/* media queries desktop */
+
+@media (min-width: 887px){
+    .formulario-contenedor{
+        width: 45vw;
+        height: 75vh;
+    }
+    h2{
+        margin-bottom: 50px
+    }
+    input{
+        margin-top: 3%
+    }
+    button{
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
 }
