@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     display: flex;
@@ -22,6 +22,11 @@ body {
   }
   h1 {
     text-align: center;
+    background-color:  #3498db;
+    color: white;
+    border-radius: 5px;
+    height: 45px;
+    padding-top: 2px;
   }
   form label {
     display: block;
@@ -45,6 +50,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
+    font-family: 'Bebas Neue',sans-serif;
+    font-size: larger;
   }
   form button:hover {
     background-color: #2980b9;
@@ -68,8 +75,76 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
   }
   
   .volver-button button:hover {
     background-color: #c0392b;
   }
+
+  /* media queries mobile */
+
+  @media (max-width: 620px){
+    .container{
+      width: 75vw;
+      height: 97vh;
+    }
+    .container input{
+      width: 85%;
+    }
+    .container select{ 
+      width: 93%;
+    }
+    a{
+      margin-left: 27vw;
+    }
+    .redireccionamiento{
+      margin-left: 23vw;
+    }
+  }
+
+
+ /*  media queries tablet */
+
+
+ @media (min-width: 621px) and (max-width: 886px){
+    .container{
+      width: 75vw;
+      height: 100vh;
+    }
+    .container input{
+      width: 85%;
+    }
+    .container select{
+      width: 90%;
+    }
+    .container label{
+      font-size: large;
+    }
+    .redireccionamiento{
+      margin-left: 19vw;
+    }
+    .volver-button{
+      margin-left: 21vw;
+    }
+ }
+
+
+ /* media queries desktop */
+
+ @media (min-width: 887px){
+    .container input{
+      width: 95%;
+    }
+    .container label{
+      font-size: large;
+    }
+    .redireccionamiento{
+      margin-left: 10.5vw;
+    }
+    .volver-button{
+      margin-left: 11.7vw;
+    }
+
+ }
