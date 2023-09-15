@@ -4,6 +4,8 @@ const productsFilePath = path.join(__dirname, '../data/ProductosDataBaseJ.json')
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));  
 
 
+
+
 const controlador = {
     index: (req, res) => {
 

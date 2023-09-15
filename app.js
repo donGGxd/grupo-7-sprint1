@@ -4,10 +4,13 @@ const bodyParser = require('body-parser');
 const app = express();
 const methodOverride =require('method-override');
 
+
+
 app.use(express.static(path.join(__dirname, '../public'))); 
 app.set('view engine','ejs'); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+
 
 //rutas acomodadas
 const routes = require('./routes/main');
