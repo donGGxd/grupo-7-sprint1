@@ -9,7 +9,6 @@ const controlador = {
 
         res.render('productos/products', { products: products});
     },
-
     // detalle del producto
     detail:function(req,res){
        
@@ -55,11 +54,21 @@ const controlador = {
     products.push(productoNuevo);
     fs.writeFileSync(productsFilePath,JSON.stringify(products,null,""))
         res.render('productos/products',{ products: products})
+        },
+        //borrar
+        borrar: (req, res) => {
+            const idProducto = req.params.id;
+            const index = products.findIndex(producto => producto.id === parseInt(idProducto));
+        
+            if (index !== -1) {
+                products.splice(index, 1);
+                fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+                res.redirect('/');
+            } 
         }
         
-    }
-   
 
+    }
 
 
 

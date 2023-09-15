@@ -16,6 +16,9 @@
         <p class="precio">$<%= products.price%></p>
         <a href="/carrito?producto=Zapatilla%20Nike%20Air&precio=129.99" class="comprar-button">Comprar</a>
         <a href="/" class="volver-button">Volver</a>
+        <form  method="post" action="/products/borrar/<%= products.id %>?_method=DELETE"  >
+          <button type="submit">Borrar</button>
+        </form>
       </div>
     </div>
   </div>

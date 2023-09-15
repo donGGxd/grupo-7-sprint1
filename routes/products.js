@@ -18,6 +18,7 @@ router.post('/vender', productsController.store);
 
 //eliminar producto
 
+router.delete('/borrar/:id', productsController.borrar);
 
 
 //
