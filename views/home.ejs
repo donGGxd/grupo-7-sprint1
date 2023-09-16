@@ -37,30 +37,27 @@
     </div>
 
     <h1 class="O">OFERTAS</h1>
-    <div class="Productos">
-
-        <section class="articulos-container">
-            <% for (let i = 0; i < products.length; i++) { %>
-            <div class="articulo">
-                <a href="/products/detail/<%= products[i].id %>">
-                <figure>
-                    <img src="/img/<%= productsDescuento[i].image%>" alt="Imagen de Zapatilla">
-                </figure>
-                </a>
-                <div class="elementos-articulo">
-                    <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
-                    <div class="precio-descuento">
-                    <div class="precio">$<%= productsDescuento[i].price%></div>
-                    <div class="descuento"><%= productsDescuento[i].discount%>% OFF</div>
-                    </div>
-                    <p><%= productsDescuento[i].name%></p>
+<div class="Productos">
+    <section class="articulos-container">
+        <% for (let j = 0; j < productsDescuento.length; j++) { %>
+        <div class="articulo">
+            <a href="/products/detail/<%= productsDescuento[j].id %>">
+            <figure>
+                <img src="/img/<%= productsDescuento[j].image %>" alt="Imagen de Zapatilla">
+            </figure>
+            </a>
+            <div class="elementos-articulo">
+                <div class="camion"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                <div class="precio-descuento">
+                    <div class="precio">$<%= productsDescuento[j].price %></div>
+                    <div class="descuento"><%= productsDescuento[j].discount %>% OFF</div>
                 </div>
+                <p><%= productsDescuento[j].name %></p>
             </div>
-            <%}%>
-        </section>
-        
-     </div>
-
+        </div>
+        <% } %>
+    </section>
+</div>
   <%- include('./partials/footer') %>
               
 </body>
