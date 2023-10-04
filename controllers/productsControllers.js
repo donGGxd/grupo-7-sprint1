@@ -48,8 +48,7 @@ const controlador = {
     
         res.redirect('/');
     },
-    
-        //borrar
+ //borrar
         borrar: (req, res) => {
             const idProducto = req.params.id;
             const index = products.findIndex(producto => producto.id === parseInt(idProducto));
