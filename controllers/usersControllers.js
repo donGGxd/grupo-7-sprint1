@@ -1,25 +1,42 @@
 const path = require('path');
 const fs = require('fs'); 
-const productsFilePath = path.join(__dirname, '../data/ProductosDataBaseJ.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));  
-
-
-const productsDescuentoFilePath = path.join(__dirname, '../data/ProductosDescuento.json');
-const productsDescuento = JSON.parse(fs.readFileSync(productsDescuentoFilePath, 'utf-8'));
-
-
+const usuariosFilePath = path.join(__dirname, '../data/users.json');
+const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));  
 
 const controlador = {
     login: (req, res) => {
         res.render('login');
     },
-    registro: (req, res) => {
-        res.render('registro');
-    },
     usuario: (req, res) => {
         res.render('usuario');
     },
-   
+    //creacion del usuario
+    
+    registro: (req, res) => {
+        res.render('registro');
+    },
+
+    registrarUsuario: (req, res) => {
+        const nuevoUsuario = {
+            id: usuarios.usuarios.length + 1,  
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password,
+            category: req.body.category,
+            image: req.body.image || '',
+        };
+    
+        usuarios.usuarios.push(nuevoUsuario);  
+    
+        fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, 2));
+    
+        res.redirect('/');
+    },
+    mostrarUsuarios: (req, res) => {
+        res.render('lista', { usuarios: usuarios.usuarios });
+    }
 };
+
 
 module.exports = controlador;

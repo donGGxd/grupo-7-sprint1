@@ -1,32 +1,39 @@
 {
-    "usuarios": [
-      {
-        "id": 1,
-        "firstName": "Juan",
-        "lastName": "Pérez",
-        "email": "juan@example.com",
-        "password": "contraseña123",
-        "category": "Usuario Normal",
-        "image": ""
-      },
-      {
-        "id": 2,
-        "firstName": "María",
-        "lastName": "Gómez",
-        "email": "maria@example.com",
-        "password": "miclave123",
-        "category": "Usuario Premium",
-        "image": ""
-      },
-      {
-        "id": 3,
-        "firstName": "Carlos",
-        "lastName": "López",
-        "email": "carlos@example.com",
-        "password": "secreto123",
-        "category": "Usuario Normal",
-        "image": ""
-      }
-    ]
-  }
-  
+  "usuarios": [
+    {
+      "id": 1,
+      "firstName": "Juan",
+      "lastName": "Pérez",
+      "email": "juan@example.com",
+      "password": "contraseña123",
+      "category": "Usuario Normal",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "firstName": "María",
+      "lastName": "Gómez",
+      "email": "maria@example.com",
+      "password": "miclave123",
+      "category": "Usuario Premium",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "firstName": "Carlos",
+      "lastName": "López",
+      "email": "carlos@example.com",
+      "password": "secreto123",
+      "category": "Usuario Normal",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "firstName": "prueba",
+      "lastName": "esto es una prueba ",
+      "email": "javier123456@gmail.com",
+      "password": "1234567890",
+      "image": ""
+    }
+  ]
+}
