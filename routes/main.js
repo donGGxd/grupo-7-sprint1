@@ -6,6 +6,8 @@ const { body } = require('express-validator');
 
 router.get('/',indexController.inicio); 
 
+
+
 router.get('/hamburguesa',indexController.menu); 
 
 router.get('/login',indexController.login);

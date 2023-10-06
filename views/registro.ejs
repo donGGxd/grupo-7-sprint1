@@ -13,10 +13,11 @@
   <div class="container">
     <h1>Registro de Zapatillas</h1>
     
-    <form action="/usuario" method="POST">
+    <form action="/registro" method="POST">
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ej:Diego" required>
-
+      <input type="text" id="firstName" name="firstName" placeholder="ej: Diego" required>
+      <label>Apellido:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="ej: Gonzales" required>
       <label for="edad">Edad:</label>
       <input type="number" id="edad" name="edad" placeholder="Ej:17" required>
 
@@ -24,7 +25,7 @@
       <input type="email" id="email" name="email" placeholder="alguien@example.com" required>
 
       <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+      <input type="password" id="password"  name="password" required>
 
       <label for="preferencia">¿Que tipo de zapatillas te gustan?:</label>
       <select id="preferencia" name="preferencia">
@@ -39,7 +40,17 @@
           <option value="comprador">Comprar</option>
   
       </select>
+      <label for="image">Imagen:</label>
+      <input type="file" id="image" name="image" >
+      
+      
+      
+      <label>Tipo de Usuario</label>
+      <select>
+        <option>Usuario Normal</option>
+      <option>Usuario Premium</option>
 
+      </select>
    
 
       <button type="submit">Registrarse</button>
