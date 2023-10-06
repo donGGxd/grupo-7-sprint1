@@ -55,13 +55,14 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ;
     margin-bottom: 40px;
   }
   
-  .volver-button button:hover {
-    background-color: #c0392b;
+  .volver-button:hover {
+    background-color: #c02d1c;
   }
+ 
   
   /* media queries mobile */
 
@@ -95,7 +96,7 @@ body {
       text-align: center;
     }
     a{
-      margin-left: 45vw;
+      margin-left: 43vw;
     }
   }
 

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs'); 
+const { validationResult } = require('express-validator');
 const productsFilePath = path.join(__dirname, '../data/ProductosDataBaseJ.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));  
 
@@ -18,7 +19,8 @@ const controlador = {
     },
     registro: (req, res) => {
         res.render('registro');
-    },
+    }
+    ,
     menu: (req, res) => {
         res.render('hamburguesa');
     },
