@@ -8,13 +8,15 @@
     <ul>
         <% usuarios.forEach((usuario) => { %>
             <li>
-                <strong>Nombre:</strong> <%= usuario.firstName %> <%= usuario.lastName %><br>
-                <strong>Correo Electrónico:</strong> <%= usuario.email %><br>
+                
                 
                 <div>
                     <img src="<%= usuario.image %>" alt="<%= usuario.firstName %> <%= usuario.lastName %>">
 
                 </div>
+                <strong>Nombre:</strong> <%= usuario.firstName %> <%= usuario.lastName %><br>
+                <strong>Correo Electrónico:</strong> <%= usuario.email %><br>
+                <strong>numero de usuario:</strong> <%= usuario.id %><br>
             </li>
         <% }); %>
     </ul>

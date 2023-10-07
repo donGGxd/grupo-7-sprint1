@@ -5,12 +5,6 @@ const usersControllers = require('../controllers/usersControllers');
 const multer = require('multer');
 //
 
-
-
-
-
-
-
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.join(__dirname, '../public/img/users'))
@@ -25,13 +19,7 @@ const storage = multer.diskStorage({
 
 const upload =multer({storage});
 
-
-
-
-
-
-
-
+router.post('/login', usersControllers.iniciarSesion);
 
 router.get('/login',usersControllers.login); 
 router.post('/usuario',usersControllers.usuario);

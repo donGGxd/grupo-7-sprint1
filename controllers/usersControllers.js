@@ -10,10 +10,30 @@ const bcrypt = require('bcrypt');
 
 
 const controlador = {
+    //inicio de session
     login: (req, res) => {
         res.render('login');
     },
-    usuario: (req, res) => {
+    // Controlador para el inicio de sesión
+ iniciarSesion: (req, res) => {
+    const { email, password } = req.body;
+
+    const usuario = usuarios.usuarios.find(user => user.email === email);
+
+    if (!usuario) {
+        return res.redirect('/login?error=Usuario no encontrado');
+    }
+    bcrypt.compare(password, usuario.password, (err, result) => {
+        if (err || !result) {
+            return res.redirect('/login?error=Contraseña incorrecta');
+        }
+
+        
+        res.redirect('/usuariosCuentas');
+    });
+}
+,
+  usuario: (req, res) => {
         res.render('usuario');
     },
     //creacion del usuario
@@ -21,11 +41,6 @@ const controlador = {
     registro: (req, res) => {
         res.render('registro');
     },
-
-
-
-
-
     registrarUsuario: (req, res) => {
         const password = req.body.password; 
     
@@ -61,8 +76,6 @@ const controlador = {
     
     
     
-
-
 
     mostrarUsuarios: (req, res) => {
         res.render('lista', { usuarios: usuarios.usuarios });
