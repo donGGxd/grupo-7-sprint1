@@ -16,9 +16,9 @@ const storage = multer.diskStorage({
         cb(null, path.join(__dirname, '../public/img/users'))
     },
     filename: (req, file, cb) => {
-        // Genera un nombre único basado en la marca de tiempo actual
+        
         const newFilename = 'group-' + Date.now() + path.extname(file.originalname);
-        req.newFilename = newFilename; // Almacena el nombre generado en el objeto de solicitud
+        req.newFilename = newFilename; 
         cb(null, newFilename);
     }
 });

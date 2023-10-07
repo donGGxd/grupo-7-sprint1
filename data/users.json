@@ -57,6 +57,14 @@
       "email": "javier123456@gmail.com",
       "password": "asdfghjkl",
       "image": "/img/users/group-1696645226151.png"
+    },
+    {
+      "id": 8,
+      "firstName": "prueba",
+      "lastName": "esto es una prueba ",
+      "email": "javier123456@gmail.com",
+      "password": "$2b$10$NYjI6qNoKKeM81L5GUNn0e6Hf2sXz8Yc3gIT/mxAC5mdEYZsdtqw.",
+      "image": "/img/users/group-1696649360474.png"
     }
   ]
 }
