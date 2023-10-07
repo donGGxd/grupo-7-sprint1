@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,7 +10,11 @@
             <li>
                 <strong>Nombre:</strong> <%= usuario.firstName %> <%= usuario.lastName %><br>
                 <strong>Correo Electrónico:</strong> <%= usuario.email %><br>
-                <!-- Otras propiedades del usuario que quieras mostrar -->
+                
+                <div>
+                    <img src="<%= usuario.image %>" alt="<%= usuario.firstName %> <%= usuario.lastName %>">
+
+                </div>
             </li>
         <% }); %>
     </ul>

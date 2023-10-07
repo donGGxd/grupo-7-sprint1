@@ -29,11 +29,34 @@
     },
     {
       "id": 4,
-      "firstName": "prueba",
-      "lastName": "esto es una prueba ",
+      "firstName": "prueba2",
+      "lastName": "esto es una prueba 00",
+      "email": "alilucasx@gmail.com",
+      "password": "sdfghjkl"
+    },
+    {
+      "id": 5,
+      "firstName": "prueba3",
+      "lastName": "esto es una prueba 2",
+      "email": "alilucasx@gmail.com",
+      "password": "asdfghjkl",
+      "image": "/img/users/group-1696635810414.png"
+    },
+    {
+      "id": 6,
+      "firstName": "Prueba0",
+      "lastName": "prueba33",
+      "email": "monkydluffy526@gmail.com",
+      "password": "4567890",
+      "image": "/img/users/group-1696635955957.png"
+    },
+    {
+      "id": 7,
+      "firstName": "prueba2",
+      "lastName": "esto es una prueba 2",
       "email": "javier123456@gmail.com",
-      "password": "1234567890",
-      "image": ""
+      "password": "asdfghjkl",
+      "image": "/img/users/group-1696645226151.png"
     }
   ]
 }

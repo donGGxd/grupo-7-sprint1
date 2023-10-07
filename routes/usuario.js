@@ -1,6 +1,33 @@
 const express = require('express');
 const router = express.Router();
+const path=require('path')
 const usersControllers = require('../controllers/usersControllers');
+const multer = require('multer');
+//
+
+
+
+
+
+
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, path.join(__dirname, '../public/img/users'))
+    },
+    filename: (req, file, cb) => {
+        // Genera un nombre único basado en la marca de tiempo actual
+        const newFilename = 'group-' + Date.now() + path.extname(file.originalname);
+        req.newFilename = newFilename; // Almacena el nombre generado en el objeto de solicitud
+        cb(null, newFilename);
+    }
+});
+
+const upload =multer({storage});
+
+
+
+
 
 
 
@@ -14,7 +41,7 @@ router.get('/registro',usersControllers.registro);
 router.get('/registro', usersControllers.registro);
 
 // Ruta para procesar el registro
-router.post('/registro', usersControllers.registrarUsuario);
+router.post('/registro',upload.single('image'), usersControllers.registrarUsuario);
 //ruta para mostrar los usuarios 
 router.get('/usuariosCuentas', usersControllers.mostrarUsuarios);
 
