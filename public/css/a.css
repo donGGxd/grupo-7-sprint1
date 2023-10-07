@@ -64,13 +64,13 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
     color: black;
     background-color: white;
     transition: all 450ms;
     border-radius: 5px; 
     border: solid 1px rgb(196, 193, 193);
+    font-family: 'Bebas Neue', sans-serif;
 
 }
 
@@ -87,12 +87,22 @@ body{
 }
 
 .formulario-contenedor footer button {
-    height: 30px;
-    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: white;
+    height: 40px;
+    width: 250px;
+    border: 1px solid rgb(196, 193, 193);
+    border-radius: 5px;
     outline: none;
     cursor: pointer;
-    font-size: 14px;
-    color: #1b54e6;
+    font-size: 18px;
+    color: black;
+    transition: all 450ms;
+}
+.formulario-contenedor footer button:hover{ 
+    background-color: #2e24c5;
+    color: white;
+    border-radius: 15px;
 }
 
 
