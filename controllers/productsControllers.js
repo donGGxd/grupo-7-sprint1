@@ -67,9 +67,19 @@ const controlador = {
                 fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
                 res.redirect('/');
             } 
-        }
-        
+        },
 
+        editar: function(req, res){
+         /*    let zapatilla= products.find(zapatilla => zapatilla.id == req.params.id) */
+             res.render("productos/editar"/* ,{zapatilla} */)
+        },
+
+
+        update: function(req,res){
+
+            
+
+        }
     }
 
 

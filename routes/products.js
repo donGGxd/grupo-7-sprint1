@@ -47,6 +47,11 @@ router.get('/',productsController.index);
 router.get('/vender', productsController.crear);
 router.post('/vender', upload.single('image'), productsController.store);
 
+//Editar producto
+
+router.get("/editar",productsController.editar)
+router.put("/editar/:id",productsController.update)
+
 //eliminar producto
 
 router.delete('/borrar/:id', productsController.borrar);
