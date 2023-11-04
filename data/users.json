@@ -1,20 +1,12 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "firstName": "prueba",
-      "lastName": "esto es una prueba ",
-      "email": "javier123456@gmail.com",
-      "password": "$2b$10$NYjI6qNoKKeM81L5GUNn0e6Hf2sXz8Yc3gIT/mxAC5mdEYZsdtqw.",
-      "image": "/img/users/group-1696649360474.png"
-    },
-    {
-      "id": 2,
-      "firstName": "prueba",
-      "lastName": "esto es una prueba ",
-      "email": "monkydluffy526@gmail.com",
-      "password": "$2b$10$bROS7pa3HiaYTaT/vxX6C.HjWZTOYuR/NCmFjCERBmdk.S8LmsUem",
-      "image": "/img/users/group-1696692182310.jpg"
+      "id": 3,
+      "firstName": "zaida",
+      "lastName": "ali",
+      "email": "gmailguim@gmail.com",
+      "password": "$2b$10$NCFJS/BN1aAkbJBI9jDcFuJ.5ODbaFmZy0GL2ZkzyPUtd4Vid0ine",
+      "image": "/img/users/group-1696718310819.jpg"
     }
   ]
 }

@@ -25,23 +25,5 @@
     "discount": 1,
     "image": "zapatillas-de-hombre-bridger.jpg",
     "category": "in-sale"
-  },
-  {
-    "id": 7,
-    "name": "Zapatilla Nike Air",
-    "description": "Perfectas para hacer deporte sin perder estilo",
-    "price": 36700,
-    "discount": 5,
-    "image": "descarga.jpg",
-    "category": "in-sale"
-  },
-  {
-    "id": 12,
-    "name": "rebook",
-    "description": "zapatillas , que mas?",
-    "category": "esencial",
-    "image": "zapatillas-de-hombre-bridger.jpg",
-    "discount": "2",
-    "price": "3000"
   }
 ]
