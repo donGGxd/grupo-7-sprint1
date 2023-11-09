@@ -1,5 +1,4 @@
--- Creación de la base de datos
-CREATE DATABASE nombre_de_la_base_de_datos;
+
 
 -- Tabla de Clientes
 CREATE TABLE Clientes (
