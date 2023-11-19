@@ -15,6 +15,15 @@
       "email": "monkydluffy526@gmail.com",
       "password": "$2b$10$bROS7pa3HiaYTaT/vxX6C.HjWZTOYuR/NCmFjCERBmdk.S8LmsUem",
       "image": "/img/users/group-1696692182310.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "diego",
+      "lastName": "gonazales",
+      "email": "alguien@gitial.com",
+      "password": "$2b$10$pNvAOl8CYgzzsP8Yox/jvuxIcyR/yc/2RteS27n9uUcYYPtfrTNGa",
+      "image": "/img/users/group-1698448358330.png"
     }
+   
   ]
 }

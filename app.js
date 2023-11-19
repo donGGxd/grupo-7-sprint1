@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const methodOverride =require('method-override');
-
+const session=require("express-session")
 
 
 
@@ -11,6 +11,10 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.set('view engine','ejs'); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+app.use(session({
+secret:"secreto!!!",
+resave: false,
+saveUninitialized: false}))
 
 
 //rutas acomodadas
