@@ -52,9 +52,11 @@ body {
     margin-top: 15px;
     font-family: 'Bebas Neue',sans-serif;
     font-size: larger;
+    transition: all 450ms;
   }
   form button:hover {
     background-color: #2980b9;
+    border-radius: 10px;
   }
   form input[type="radio"] {
     margin-top: 5px;
@@ -74,13 +76,14 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 450ms ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: large;
   }
   
   .volver-button button:hover {
     background-color: #c0392b;
+    border-radius: 10px;
   }
 
   /* media queries mobile */

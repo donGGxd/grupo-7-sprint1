@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/css/usuarios.css">
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul>
+        <% usuarios.forEach((usuario) => { %>
+            <li>
+                
+                
+                <div>
+                    <img src="<%= usuario.image %>" alt="<%= usuario.firstName %> <%= usuario.lastName %>">
+
+                </div>
+                <strong>Nombre:</strong> <%= usuario.firstName %> <%= usuario.lastName %><br>
+                <strong>Correo Electrónico:</strong> <%= usuario.email %><br>
+                <strong>numero de usuario:</strong> <%= usuario.id %><br>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/">Volver</a>
+</body>
+</html>
