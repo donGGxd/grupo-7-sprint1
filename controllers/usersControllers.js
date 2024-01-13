@@ -3,6 +3,7 @@ const fs = require('fs');
 const usuariosFilePath = path.join(__dirname, '../data/users.json');
 const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));  
 const bcrypt = require('bcrypt');
+const {check,validationResult,body}=require('express-validator');
 
 
 
@@ -16,7 +17,7 @@ const controlador = {
     },
     // Controlador para el inicio de sesión
  iniciarSesion: (req, res) => {
-    const { email, password } = req.body;
+     const { email, password } = req.body;
 
     const usuario = usuarios.usuarios.find(user => user.email === email);
 
@@ -30,7 +31,7 @@ const controlador = {
 
         
         res.redirect('/usuariosCuentas');
-    });
+    }); 
 }
 ,
   usuario: (req, res) => {

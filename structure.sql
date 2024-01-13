@@ -24,3 +24,4 @@ CREATE TABLE Cliente_Zapatilla (
   FOREIGN KEY (cliente_id) REFERENCES Clientes(cliente_id),
   FOREIGN KEY (zapatilla_id) REFERENCES Zapatillas(zapatilla_id)
 );
+ 
