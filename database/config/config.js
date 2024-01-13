@@ -2,7 +2,7 @@ module.exports={
   "development": {
     "username": "root",
     "password": null,
-    "database": "zapatillas",
+    "database": "db_zapatillas",
     "host": "localhost",
     "dialect": "mysql"
   },
