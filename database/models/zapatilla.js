@@ -1,5 +1,5 @@
 module.exports= (sequelize,DataTypes)=>{
-    let alias="zapatilla"
+    let alias="Zapatilla"
     let cols={
        id_zapatillas:{
            type:DataTypes.INTEGER.UNSIGNED,
@@ -54,8 +54,8 @@ module.exports= (sequelize,DataTypes)=>{
        timestamps: false,
   
     }
-    const zapatilla =sequelize.define(alias,cols,config)
+    const Zapatilla =sequelize.define(alias,cols,config)
   
-    return zapatilla
+    return Zapatilla
   }
   

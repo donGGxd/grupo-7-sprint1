@@ -42,7 +42,7 @@ module.exports= (sequelize,DataTypes)=>{
         type:DataTypes.INTEGER.UNSIGNED,
         foreignKey:true,
         references: {
-            model: 'tipo_Usuario',
+            model: 'Tipo_Usuario',
             key: 'id_tipo'
         }
 
