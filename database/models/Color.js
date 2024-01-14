@@ -1,13 +1,13 @@
 module.exports= (sequelize,DataTypes)=>{
-    let alias="Tipo_Usuarios"
+    let alias="Color"
     let cols={
-       id_tipo:{
+       id_color:{
           type:DataTypes.INTEGER,
           autoIncrement: true,
           allowNull: false,
           primaryKey:true
        },
-       tipo:{
+       tipo_color:{
           type:DataTypes.STRING,
           allowNull: false
        },
@@ -15,12 +15,12 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     let config={
-       tableName:"tipo_clientes",
+       tableName:"colores",
        timestamps: false,
   
     }
-    const Tipo_Usuario =sequelize.define(alias,cols,config)
+    const Color =sequelize.define(alias,cols,config)
   
-    return Tipo_Usuario
+    return Color
   }
   
