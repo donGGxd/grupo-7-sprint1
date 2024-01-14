@@ -1,7 +1,7 @@
 module.exports= (sequelize,DataTypes)=>{
     let alias="zapatilla"
     let cols={
-       id_zapatillas:{
+       id:{
            type:DataTypes.INTEGER.UNSIGNED,
            primaryKey: true,
            autoIncrement: true,
@@ -35,15 +35,6 @@ module.exports= (sequelize,DataTypes)=>{
         references: {
             model: 'talles',
             key: 'id_talle'
-        }
-
-     },
-     color_id:{
-        type:DataTypes.INTEGER.UNSIGNED,
-        foreignKey:true,
-        references: {
-            model: 'colores',
-            key: 'id_color'
         }
 
      }

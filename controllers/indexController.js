@@ -10,6 +10,9 @@ const productsDescuento = JSON.parse(fs.readFileSync(productsDescuentoFilePath, 
 
 
 
+//
+
+
 const controlador = {
     inicio: (req, res) => {
         res.render('home', { products: products ,productsDescuento:productsDescuento});

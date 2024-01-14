@@ -25,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName:'Zapas',
         timestamps:false
     });
+   
     Zapatilla.associate=function(models){
        Zapatilla.belongsTo(models.Clientes,{
             as:'zapatillas',
