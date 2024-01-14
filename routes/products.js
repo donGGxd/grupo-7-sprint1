@@ -27,14 +27,6 @@ const storage = multer.diskStorage({
 
 
 
-
-
-
-
-
-
-
-
 // detalle del producto
 
 router.get("/detail/:id/",productsController.detail)
