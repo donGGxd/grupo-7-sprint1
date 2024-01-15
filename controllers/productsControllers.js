@@ -91,14 +91,12 @@ const controlador = {
     },
  //borrar
         borrar: (req, res) => {
-            const idProducto = req.params.id;
-            const index = products.findIndex(producto => producto.id === parseInt(idProducto));
-        
-            if (index !== -1) {
-                products.splice(index, 1);
-                fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-                res.redirect('/');
-            } 
+            db.Zapatilla.destroy({
+                where: {
+                    id : req.params.id
+                }
+            })
+            res.redirect('/products')
         },
 
         editar: function(req, res){
