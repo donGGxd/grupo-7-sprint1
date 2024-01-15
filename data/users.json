@@ -23,7 +23,14 @@
       "email": "alguien@gitial.com",
       "password": "$2b$10$pNvAOl8CYgzzsP8Yox/jvuxIcyR/yc/2RteS27n9uUcYYPtfrTNGa",
       "image": "/img/users/group-1698448358330.png"
+    },
+    {
+      "id": 4,
+      "firstName": "luis",
+      "lastName": "alberto",
+      "email": "alguien@gmail.com",
+      "password": "$2b$10$Ha.rFPB97ZEyg6QZE8I.j.RJnhEbt21Ns9BX/SQmUTsEMv2yyEZpy",
+      "image": "/img/users/undefined"
     }
-   
   ]
 }

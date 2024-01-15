@@ -20,6 +20,13 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     const Color =sequelize.define(alias,cols,config)
+
+    Color.associate= function(models){
+      Color.belongsTo(models.Zapatilla,{
+         as:"colores_zapatillas",
+         foreingKey:"color_id"
+      })
+   }
   
     return Color
   }

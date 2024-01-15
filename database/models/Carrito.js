@@ -33,6 +33,19 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     const Carrito =sequelize.define(alias,cols,config)
+
+    Carrito.associate= function(models){
+      /* Carrito.hasMany(models.Zapatilla,{
+         as:"carrito_zapatilla",
+         foreingKey:"zapatillas_id"
+      }) */
+
+      Carrito.belongsTo(models.Venta,{
+         as:'carrito_venta',
+         foreignKey:'carrito_id'
+     })
+
+    } 
   
     return Carrito
   }

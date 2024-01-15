@@ -20,6 +20,14 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     const Talle =sequelize.define(alias,cols,config)
+
+    
+    Talle.associate= function(models){
+     Talle.belongsTo(models.Zapatilla,{
+         as:"talles_zapatillas",
+         foreingKey:"talle_id"
+      })
+   }
   
     return Talle
   }

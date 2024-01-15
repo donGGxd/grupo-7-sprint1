@@ -9,19 +9,19 @@
 <body>
   <div class="container">
     <div class="producto">
-      <img src="/img/<%= products.image %>" alt="Zapatilla Nike Air" class="producto-imagen">
+      <img src="/img/<%= productos.imagen %>" alt="Zapatilla Nike Air" class="producto-imagen">
       <div class="producto-info">
-        <h1><%= products.name%></h1>
-        <p><%= products.description%></p>
-        <p class="precio">$<%= products.price%></p>
+        <h1><%= productos.nombre%></h1>
+        <p><%= productos.descripcion%></p>
+        <p class="precio">$<%= productos.precio%></p>
         <a href="/carrito?producto=Zapatilla%20Nike%20Air&precio=129.99" class="comprar-button">Comprar</a>
         <a href="/" class="volver-button">Volver</a>
-        <form  method="post" action="/products/borrar/<%= products.id %>?_method=DELETE"  >
+        <form  method="post" action="/productos/borrar/<%= productos.id_zapatillas %>?_method=DELETE"  >
           <button type="submit">Borrar</button>
         </form>
 
         
-        <a href="/products/editar"><button type="submit">Editar</button></a>
+        <a href="/productos/editar"><button type="submit">Editar</button></a>
         
 
 

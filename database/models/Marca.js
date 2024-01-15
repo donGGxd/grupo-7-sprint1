@@ -20,6 +20,13 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     const Marca=sequelize.define(alias,cols,config)
+
+    Marca.associate= function(models){
+      Marca.belongsTo(models.Zapatilla,{
+         as:"marcas_zapatillas",
+         foreingKey:"marca_id"
+      })
+   }
   
     return Marca
   }

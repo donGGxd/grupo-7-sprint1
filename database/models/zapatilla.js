@@ -1,3 +1,5 @@
+/*  const zapatillas = require("./zapatillas")  */
+
 module.exports= (sequelize,DataTypes)=>{
     let alias="Zapatilla"
     let cols={
@@ -16,6 +18,15 @@ module.exports= (sequelize,DataTypes)=>{
           allowNull:false
        },
        descuento:{
+        type:DataTypes.STRING,
+        allowNull:false
+     },
+
+     precio:{
+        type: DataTypes.REAL
+     },
+
+     imagen:{
         type:DataTypes.STRING,
         allowNull:false
      },
@@ -55,7 +66,33 @@ module.exports= (sequelize,DataTypes)=>{
   
     }
     const Zapatilla =sequelize.define(alias,cols,config)
+
+      Zapatilla.associate= function(models){
+       /*  Zapatilla.belongsTo(models.Carrito,{
+           as:"zapatilla_carrito",
+           foreingKey:"zapatillad_id"
+        }) 
+     */
+
+    Zapatilla.hasMany(models.Marca,{
+            as:"zapatilla_marca",
+            foreingKey:"marca_id",
+
+            })  
+    Zapatilla.hasMany(models.Color,{
+            as:"zapatilla_color",
+            foreingKey:"color_id",
+    
+            }) 
+     Zapatilla.hasMany(models.Talle,{
+             as:"zapatilla_talle",
+            foreingKey:"talle_id",
+        
+             }) 
+            }  
   
     return Zapatilla
+    
+   
   }
   
