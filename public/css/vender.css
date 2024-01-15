@@ -30,12 +30,15 @@ body {
     border-radius: 15px;
     background-color: rgb(228, 228, 228);
   }
-  label {
-    font-size: 25px;
-  }
+  
   label, input, textarea {
     display: block;
     margin-bottom: 10px;
+  } 
+
+  select{
+    border-radius: 15px;
+    width: 200px;
   }
   input{
     border: none 5px white;

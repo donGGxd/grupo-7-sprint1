@@ -43,7 +43,12 @@ const controlador = {
 
     //creacion del producto
     crear:(req, res) => {
-        res.render('productos/vender');
+         res.render('productos/vender'); 
+        /* db.Marca.findAll()
+          .then(marcas=>{
+            return res.render('productos/vender',{marcas:marcas})
+          }) */
+         
     },
     store: (req, res) => {
 
@@ -54,7 +59,7 @@ const controlador = {
          {
             nombre: req.body.name,
             descripcion: req.body.description,
-           /*  marca_id: req.body.category, */
+           /*  marca_id: req.body.marca,  */
             imagen:imagenZapatilla,
             descuento: req.body.discount,
             precio: req.body.price,
@@ -95,16 +100,41 @@ const controlador = {
         },
 
         editar: function(req, res){
-         /*    let zapatilla= products.find(zapatilla => zapatilla.id == req.params.id) */
-             res.render("productos/editar"/* ,{zapatilla} */)
+            /*  let zapatilla= products.find(zapatilla => zapatilla.id == req.params.id) 
+             res.render("productos/editar",{zapatilla} )  */
+
+             db.Zapatilla.findByPk(req.params.id)
+           .then(productos=>{
+           return res.render("productos/editar",{productos:productos})
+           })
+
+
         },
 
 
         update: function(req,res){
 
+            /* db.Zapatilla.findByPk(req.params.id)  */
             
+            db.Zapatilla.update(
+                {
+                    nombre: req.body.name,
+                    descripcion: req.body.description,
+                    /* marca_id: req.body.marca,  */
+                    imagen:req.body.image,
+                    descuento: req.body.discount,
+                    precio: req.body.price,
+            },{
+            where:{
+                id_zapatillas:req.params.id
+            }
+            }
+            )
+            
+         res.redirect('/products')
 
         }
+
     }
 
 

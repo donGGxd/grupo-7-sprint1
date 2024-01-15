@@ -21,12 +21,12 @@ module.exports= (sequelize,DataTypes)=>{
     }
     const Marca=sequelize.define(alias,cols,config)
 
-    Marca.associate= function(models){
-      Marca.belongsTo(models.Zapatilla,{
+    /* Marca.associate= function(models){
+      Marca.hasMany(models.Zapatilla,{
          as:"marcas_zapatillas",
          foreingKey:"marca_id"
       })
-   }
+   } */
   
     return Marca
   }
