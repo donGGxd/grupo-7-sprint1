@@ -79,6 +79,7 @@ body {
     transition: all 450ms ;
     font-family: 'Bebas Neue', sans-serif;
     font-size: large;
+    margin-left: -62px;
   }
   
   .volver-button button:hover {

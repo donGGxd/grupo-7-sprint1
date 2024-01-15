@@ -23,19 +23,23 @@ body {
 
   form {
     max-width: 400px;
+    height: 700px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 15px;
     background-color: rgb(228, 228, 228);
   }
-  
+  label {
+    font-size: 25px;
+  }
   label, input, textarea {
     display: block;
     margin-bottom: 10px;
   }
   input{
     border: none 5px white;
+    border-radius: 5px;
   }
   
   button {
@@ -48,7 +52,7 @@ body {
     transition: all 450ms;
     font-family: 'Bebas Neue', sans-serif;
     font-size: large;
-
+    margin-top: 50px;
 
   }
   
