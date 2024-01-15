@@ -35,7 +35,7 @@ module.exports= (sequelize,DataTypes)=>{
           type:DataTypes.INTEGER.UNSIGNED,
           foreignKey:true,
           references: {
-              model: 'marcas',
+              model: 'Marca',
               key: 'id_marca'
           }
   
@@ -65,12 +65,12 @@ module.exports= (sequelize,DataTypes)=>{
         }) 
      */
 
-    Zapatilla.hasMany(models.Marca,{
+   /*  Zapatilla.belongsTo(models.Marca,{
             as:"zapatilla_marca",
             foreingKey:"marca_id",
 
-            })  
-    Zapatilla.hasMany(models.Color,{
+            })   */
+  /*   Zapatilla.hasMany(models.Color,{
             as:"zapatilla_color",
             foreingKey:"color_id",
     
@@ -79,7 +79,7 @@ module.exports= (sequelize,DataTypes)=>{
              as:"zapatilla_talle",
             foreingKey:"talle_id",
         
-             }) 
+             })  */
             }  
   
     return Zapatilla

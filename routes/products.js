@@ -41,8 +41,8 @@ router.post('/vender', upload.single('image'), productsController.store);
 
 //Editar producto
 
-router.get("/editar",productsController.editar)
-router.put("/editar/:id",productsController.update)
+router.get("/editar/:id",productsController.editar)
+router.post("/editar/:id",productsController.update)
 
 //eliminar producto
 
