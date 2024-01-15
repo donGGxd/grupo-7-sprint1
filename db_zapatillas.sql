@@ -43,6 +43,8 @@ CREATE TABLE colores(
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   tipo_id INT UNSIGNED NOT NULL,
+  precio INT NOT NULL,
+  imagen VARCHAR NOT NULL,
   PRIMARY KEY (id_clientes),
   UNIQUE INDEX email_UNIQUE (email ASC),
   FOREIGN KEY(tipo_id) REFERENCES tipo_clientes(id_tipo)
